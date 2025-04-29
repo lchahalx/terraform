@@ -1,0 +1,8 @@
+# Ignore Terraform sensitive files
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+*.tfvars.json
+
