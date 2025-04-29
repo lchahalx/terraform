@@ -11,7 +11,7 @@ This Terraform project automates the creation of a Kubernetes cluster with both 
 - **Proxmox VE environment**: Must be running and accessible via API
 - **Proxmox API credentials**: Required for interacting with Proxmox resources
 - **SSH keys**: Ensure your SSH public key is placed at `~/.ssh/id_ed25519.pub` for accessing VMs
-- **Proxmox VM Template**: A template to clone for the VMs (e.g., a Ubuntu template)
+- **Proxmox VM Template**: A template to clone for the VMs (https://github.com/lchahalx/terraform/blob/main/ubuntu_24_cloud_init_template_on_proxmox.md)
 
 ## Directory Structure
 
@@ -147,8 +147,8 @@ variable "template" {
 
 1. **Clone the repository and navigate to the project directory**:
     ```bash
-    git clone <repository_url>
-    cd k8s-cluster-setup
+    git clone https://github.com/lchahalx/terraform
+    cd pmx
     ```
 
 2. **Initialize Terraform**:
